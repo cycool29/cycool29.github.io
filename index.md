@@ -1,3 +1,9 @@
+---
+layout: default
+author: cycool29
+---
+
+
 # Hi there <a href="https://github.com/cycool29/cycool29"><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px"></a> 
 
 
