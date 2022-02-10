@@ -1,4 +1,5 @@
 ---
+title: Home
 layout: default
 author: cycool29
 ---
