@@ -1,7 +1,5 @@
 title: cycool29.github.io
-description: My little blog.
-show_downloads: false
-google_analytics:
+description: Feel the power of programming.
 remote_theme: jekyll-theme-hacker
 github:
     is_project_page: false
