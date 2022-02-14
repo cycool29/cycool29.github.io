@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
+<html lang="{{ site.lang | default: " en-US" }}">
+
+<head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,37 +15,99 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-C3D93465DL"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-      gtag('config', 'G-C3D93465DL');
+        gtag('config', 'G-C3D93465DL');
     </script>
     <title>{{ page.title }} - cycool29 blog</title>
     {% include head-custom.html %}
 
-  </head>
+</head>
 
-  <body>
+<body>
+    <style>
+        #backtotopBtn {
+            -webkit-transition: 0.3s;
+            -o-transition: 0.3s;
+            transition: 0.3s;
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Fixed/sticky position */
+            bottom: 20px;
+            /* Place the button at the bottom of the page */
+            right: 30px;
+            /* Place the button 30px from the right */
+            z-index: 99;
+            /* Make sure it does not overlap */
+            border: none;
+            /* Remove borders */
+            outline: none;
+            /* Remove outline */
+            background-color: #F28123;
+            /* Set a background color */
+            color: #ffffff;
+            /* Text color */
+            padding: 15px;
+            /* Some padding */
+            border-radius: 10px;
+            /* Rounded corners */
+            font-size: 18px;
+            /* Increase font size */
+        }
 
+        #backtotopBtn:hover {
+            background-color: black;
+            color: #F28123
+        }
+    </style>
+    <!-- backtotop button -->
+    <button onclick="topFunction()" id="backtotopBtn" title="Back to top"><i class="fa fa-arrow-up"></i></button>
+    <!-- end backtotop button -->
     <header>
-      <div class="container">
-        <a id="a-title" href="{{ '/' | relative_url }}">
-          <h1>{{ site.title | default: site.github.repository_name }}</h1>
-        </a>
-        <h2>{{ site.description | default: site.github.project_tagline }}</h2>
+        <div class="container">
+            <a id="a-title" href="{{ '/' | relative_url }}">
+                <h1>{{ site.title | default: site.github.repository_name }}</h1>
+            </a>
+            <h2>{{ site.description | default: site.github.project_tagline }}</h2>
 
-        <section id="github">
-          <a href="https://github.com/cycool29" class="btn" target="_blank"><i class="fa fa-github fa-lg" aria-hidden="true"></i> View my GitHub</a>
-          <a href="https://ko-fi.com/cycool29" class="btn" target="_blank"><i class="kofi"></i> Support me!</a>
-        </section>
-      </div>
+            <section id="github">
+                <a href="https://github.com/cycool29" class="btn" target="_blank"><i class="fa fa-github fa-lg"
+                        aria-hidden="true"></i> View my GitHub</a>
+                <a href="https://ko-fi.com/cycool29" class="btn" target="_blank"><i class="kofi"></i> Support me!</a>
+            </section>
+        </div>
     </header>
 
     <div class="container">
-      <section id="main_content">
-        {{ content }}
-      </section>
+        <section id="main_content">
+            {{ content }}
+        </section>
     </div>
-  </body>
+
+    <script>
+        //Get the button:
+        mybutton = document.getElementById("backtotopBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Stupid Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, Opera and other smart browsers
+        }
+    </script>
+</body>
+
 </html>
