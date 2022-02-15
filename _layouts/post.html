@@ -19,14 +19,12 @@ layout: default
     return document.evaluate(path, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
   }
   // getElementByXpath('/html/body/main/h1/em').remove();
-  $(() => {
-    const checkDiv = setInterval(() => {
-      if ($('.btn-primary').length > 0) { // it's better to use id instead of the class as selector
-        clearInterval(checkDiv);
-        getElementByXpath('/html/body/main/h1/em').remove();
-      }
-    }, 100); // check after 100ms every time
-  });
+  const checkDiv = setInterval(() => {
+    if ($('.btn-primary').length > 0) { // it's better to use id instead of the class as selector
+      clearInterval(checkDiv);
+      getElementByXpath('/html/body/main/h1/em').remove();
+    }
+  }, 100); // check after 100ms every time
 </script>
 
 <hr>
