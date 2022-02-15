@@ -26,61 +26,114 @@
 
   color: $plaintext;
 
-  table td { padding: 5px; }
-  table pre { margin: 0; }
+  table td {
+    padding: 5px;
+  }
+
+  table pre {
+    margin: 0;
+  }
+
   .w {
     color: $plaintext;
   }
+
   .err {
     color: $error-foreground;
     background-color: $error-background;
   }
-  .c,  .cd,  .cm,  .c1,  .cs {
+
+  .c,
+  .cd,
+  .cm,
+  .c1,
+  .cs {
     color: $comment;
   }
+
   .cp {
     color: $preprocessor;
   }
-  .o,  .ow {
+
+  .o,
+  .ow {
     color: $operator;
   }
-  .p,  .pi {
+
+  .p,
+  .pi {
     color: $plaintext;
   }
+
   .gi {
     color: $string;
   }
+
   .gd {
     color: $deleted;
   }
+
   .gh {
     color: $header;
     font-weight: bold;
   }
-  .k,  .kn,  .kp,  .kr,  .kv {
+
+  .k,
+  .kn,
+  .kp,
+  .kr,
+  .kv {
     color: $keyword;
   }
-  .kc, .kt, .kd {
-      color: $keyword-type;
+
+  .kc,
+  .kt,
+  .kd {
+    color: $keyword-type;
   }
-  .s,  .sb,  .sc,  .sd,  .s2,  .sh,  .sx,  .s1 {
+
+  .s,
+  .sb,
+  .sc,
+  .sd,
+  .s2,
+  .sh,
+  .sx,
+  .s1 {
     color: $string;
   }
+
   .sr {
     color: $regex;
   }
-  .si, .se {
+
+  .si,
+  .se {
     color: $string-escape;
   }
-  .nt, .nn,  .nc, .no{
+
+  .nt,
+  .nn,
+  .nc,
+  .no {
     color: $name-space;
   }
+
   .na {
     color: $name-attribute;
   }
-  .m,  .mf,  .mh,  .mi,  .il,  .mo,  .mb,  .mx {
+
+  .m,
+  .mf,
+  .mh,
+  .mi,
+  .il,
+  .mo,
+  .mb,
+  .mx {
     color: $literal;
   }
+
   .ss {
     color: $string;
   }
