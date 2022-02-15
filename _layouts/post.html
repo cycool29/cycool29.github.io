@@ -14,6 +14,12 @@ layout: default
   crossorigin="anonymous" async>
 </script>
 
+<script>
+  function getElementByXpath(path) {
+    return document.evaluate(path, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+  }
+  getElementByXpath('/html/body/main/h1/em').remove();
+</script>
 
 <hr>
 
@@ -34,16 +40,6 @@ layout: default
       'floating-chat.donateButton.background-color': '#00ff00',
       'floating-chat.donateButton.text-color': '#000'
     });
-  }
-</script>
-
-<script>
-  function myFunc() {
-    if (document.getElementById('myElement')) {
-      // do stuff
-    } else {
-      setTimeout(myFunc, 15);
-    }
   }
 </script>
 
