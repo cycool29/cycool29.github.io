@@ -16,5 +16,5 @@ There are many tools for similar purpose [on GitHub](https://github.com/search?q
 
 ### Latest posts
 
-- [How to make a GitHub Profile views counter using Bitly link](https://cycool29.github.io/post/000002)
-- [Use keyboard, mouse and monitor from external PC for your Raspberry Pi](https://cycool29.github.io/post/000001)
+- [How to make a GitHub Profile views counter using Bitly link](/post/000002)
+- [Use keyboard, mouse and monitor from external PC for your Raspberry Pi](/post/000001)
