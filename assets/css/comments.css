@@ -89,5 +89,5 @@ main .pagination-loader-container {
 }
 
 em {
-    visibility: hidden;
+    display: none;
 }
