@@ -103,6 +103,11 @@ header h2 {
 /* Main Content
 */
 
+.gsc-header {
+  display: none;
+  visibility: hidden
+}
+
 #main_content {
   width: 100%;
   -webkit-font-smoothing: antialiased;
@@ -226,7 +231,6 @@ hr {
   background: -webkit-linear-gradient(top, rgba(40, 40, 40, 0.3), rgba(35, 35, 35, 0.3) 50%, rgba(10, 10, 10, 0.3) 50%, rgba(0, 0, 0, 0.3));
   padding: 8px 18px;
   border-radius: 50px;
-  border: 2px solid rgba(0, 0, 0, 0.7);
   border-bottom: 2px solid rgba(0, 0, 0, 0.7);
   border-top: 2px solid rgba(0, 0, 0, 1);
   color: rgba(255, 255, 255, 0.8);
@@ -236,6 +240,7 @@ hr {
   text-decoration: none;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  border: 1px solid #00ff00;
 }
 
 .btn:hover {
@@ -248,6 +253,47 @@ hr {
   height: 16px;
   margin: 1px 8px 0 0;
   float: left;
+}
+
+/* All buttons */
+.btn:hover {
+  opacity: 1;
+  color: white
+}
+
+/* Facebook button */
+.fa-facebook-official {
+  color: #3b5998;
+}
+
+/* Twitter button */
+.fa-twitter {
+  color: #55acee;
+}
+
+/* Pinterest button */
+.fa-pinterest-p {
+  color: #cb2027;
+}
+
+/* Tumblr button */
+.fa-tumblr {
+  color: #32506d;
+}
+
+/* Reddit button */
+.fa-reddit-alien {
+  color: #ff4500;
+}
+
+/* LinkedIn button */
+.fa-linkedin {
+  color: #007bb5;
+}
+
+/* Email button */
+.fa-envelope {
+  color: #444444;
 }
 
 .kofi {

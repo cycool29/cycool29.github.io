@@ -5,7 +5,7 @@ author: cycool29
 ---
 
 
-## How to make a GitHub Profile views counter using Bitly link
+## Pro way of making a GitHub Profile views-counter
 
 Sometimes you may want to see how many views of your GitHub profile. 
 

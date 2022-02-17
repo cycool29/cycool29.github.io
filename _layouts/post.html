@@ -8,6 +8,13 @@ layout: default
 
 {{content}}
 
+<p style="height: 5px;"></p>
+<p></p>
+
+{% if page.tags %}
+<small style="color: #808080 ">tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
+{% endif %}
+
 <hr>
 
 <p></p>
@@ -15,29 +22,18 @@ layout: default
 <!-- <script src="https://utteranc.es/client.js" repo="cycool29/cycool29.github.io" issue-term="Comments: '{{page.title}}'"
   label="blog-comments 💬" theme="github-dark" crossorigin="anonymous" async>
 </script> -->
-<script src="https://giscus.app/client.js"
-        data-repo="cycool29/cycool29.github.io"
-        data-repo-id="R_kgDOG2n1VA"
-        data-category="General"
-        data-category-id="DIC_kwDOG2n1VM4CBMIA"
-        data-mapping="specific"
-        data-term="{{page.title}}"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="https://github.com/giscus/giscus/raw/main/styles/themes/dark.css"
-        data-lang="en"
-        crossorigin="anonymous"
-        async>
-</script>
-
+<div class="comments">
+  <script src="https://giscus.app/client.js" data-repo="cycool29/cycool29.github.io" data-repo-id="R_kgDOG2n1VA"
+    data-category="General" data-category-id="DIC_kwDOG2n1VM4CBMIA" data-mapping="specific"
+    data-term="[blog-comments] {{page.title}}" data-reactions-enabled="1" data-emit-metadata="0"
+    data-input-position="bottom" data-theme="https://github.com/cycool29/cycool29.github.io/raw/master/assets/css/comments.css" data-lang="en" crossorigin="anonymous" async>
+  </script>
+</div>
 <p></p>
 
 <hr>
 
-{% if page.tags %}
-<small style="color: #808080 ">tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
-{% endif %}
+
 
 <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
 
@@ -55,6 +51,44 @@ layout: default
     });
   }
 </script>
+
+<p></p>
+<h3>Share this article:</h3>
+
+<a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ page.url }}" class="btn"
+  onclick="window.open(this.href, 'pop-up', ''); return false;">
+  <i class="fa fa-facebook-official"></i>
+</a>
+
+<a href="https://twitter.com/intent/tweet?text=Check out this article - {{ page.title }}&url={{ site.url }}{{ site.baseurl }}{{ page.url }}"
+  class="btn" onclick="window.open(this.href, 'pop-up', ''); return false;">
+  <i class="fa fa-twitter"></i>
+</a>
+
+<a href="http://pinterest.com/pin/create/button/?url={{ site.url }}{{ site.baseurl }}{{ page.url }}" class="btn"
+  onclick="window.open(this.href, 'pop-up', ''); return false;">
+  <i class="fa fa-pinterest-p"></i>
+</a>
+
+<a href="http://www.tumblr.com/share/link?url={{ site.url }}{{ site.baseurl }}{{ page.url }}" class="btn"
+  onclick="window.open(this.href, 'pop-up', ''); return false;">
+  <i class="fa fa-tumblr"></i>
+</a>
+
+<a href="http://www.reddit.com/submit?url={{ site.url }}{{ site.baseurl }}{{ page.url }}&title=Check out this article - {{ page.title }}"
+  class="btn" onclick="window.open(this.href, 'pop-up', ''); return false;">
+  <i class="fa fa-reddit-alien"></i>
+</a>
+
+<a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ site.baseurl }}{{ page.url }}&title={{ page.title }}&summary={{ page.description }}&source={{ site.title }}"
+  class="btn" onclick="window.open(this.href, 'pop-up', ''); return false;">
+  <i class="fa fa-linkedin"></i>
+</a>
+
+<a href="mailto:?subject={{ page.title }}&amp;body=Check out this article - {{ site.url }}{{ site.baseurl }}{{ page.url }}"
+  class="btn">
+  <i class="fa fa-envelope"></i>
+</a>
 
 <footer>
   <br></br>
