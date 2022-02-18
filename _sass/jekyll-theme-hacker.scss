@@ -103,11 +103,6 @@ header h2 {
 /* Main Content
 */
 
-.gsc-header {
-  display: none;
-  visibility: hidden;
-}
-
 #main_content {
   width: 100%;
   -webkit-font-smoothing: antialiased;
@@ -378,6 +373,12 @@ a {
 }
 
 #backtotopBtn:hover {
+  background-color: black;
+  color: #00ff00;
+  cursor: pointer;
+}
+
+.hiddenUntilReady.closed.floatingchat-donate-button:hover {
   background-color: black;
   color: #00ff00;
   cursor: pointer;
