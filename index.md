@@ -12,7 +12,7 @@ You might want to see how many times your GitHub profile has been viewed. It ref
 There are many tools for similar purposes [on GitHub](https://github.com/search?q=github+profile+counter), but here, we are using **Bitly link**. 
 
 
-[Read more](https://cycool29.github.io/post/000002)
+[Read more](/post/000002)
 
 ### Latest posts
 
