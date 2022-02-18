@@ -182,7 +182,7 @@ blockquote {
 
 pre {
   background: rgba(0, 0, 0, 0.9);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 1px solid #0f0;
   padding: 10px;
   font-size: 16px;
   color: #00ff00;
@@ -192,13 +192,27 @@ pre {
   overflow-y: hidden;
 }
 
+::-webkit-scrollbar {
+  height: 10px;
+  width: 5px;
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0f0;
+}
+
 code.highlighter-rouge {
   background: rgba(0, 0, 0, 0.9);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 1px solid #808080;
   padding: 0px 3px;
   margin: 0px -3px;
-  color: #aa759f;
+  color: #98C89B;
   border-radius: 2px;
+}
+
+pre:horizontal {
+  background: #0f0;
 }
 
 table {
@@ -252,7 +266,7 @@ hr {
   width: 16px;
   height: 16px;
   margin: 1px 8px 0 0;
-  float: left;
+  // float: left;
 }
 
 /* All buttons */
