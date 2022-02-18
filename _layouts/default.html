@@ -61,55 +61,6 @@
         </section>
         <!-- Begin Mailchimp Signup Form -->
         <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
-        <style>
-            .credentials {
-                font: 14px;
-                height: 30px;
-                background-color: #000;
-                border-color: #0f0;
-                color: white;
-            }
-
-            .credentials:focus {
-                outline: none !important;
-                border-color: #00ff00 !important;
-                box-shadow: 0 0 10px #98ff98;
-            }
-
-            .mce_inline_error {
-                color: #808080;
-                font-size: 12px;
-            }
-
-            #mc-embedded-subscribe.button {
-                -webkit-transition: 0.3s;
-                -o-transition: 0.3s;
-                transition: 0.3s;
-                z-index: 99;
-                border: none;
-                outline: none;
-                background-color: #0f0;
-                color: #000;
-                padding: 10px;
-                border-radius: 10px;
-                font-size: 15px;
-            }
-
-            #mc-embedded-subscribe.button:hover {
-                background-color: black;
-                color: #00ff00;
-                cursor: pointer;
-            }
-
-            #mc-embedded-subscribe {
-                clear: both;
-                width: auto;
-                display: block;
-                margin: unset;
-            }
-        </style>
-
-
         <div style="clear:left; border:1px solid #0f0; padding: 2%;">
             <form
                 action="https://github.us14.list-manage.com/subscribe/post?u=d01fb9dd9fae15e15a3292b94&amp;id=0df015b36a"
@@ -121,7 +72,7 @@
                         <p></p>
                         <p>Email Address:</p>
                         <input type="email" value="" name="EMAIL" class="required email credentials" id="mce-EMAIL"
-                            tabindex="-1">
+                            tabindex="-1" style="width: 100%">
                     </div>
                     <div class="mc-field-group">
                         <p></p>
@@ -134,14 +85,18 @@
                         <input type="text" value="" name="LNAME" class="credentials" id="mce-LNAME" tabindex="-1">
                     </div>
                     <div id="mce-responses" class="clear foot">
-                        <div class="response" id="mce-error-response" style="display:none"></div>
-                        <div class="response" id="mce-success-response" style="display:none"></div>
+                        <p></p>
+                        <div class="response" id="mce-error-response"
+                            style="display:none; color: #808080; font-size: 12px;"></div>
+                        <div class="response" id="mce-success-response"
+                            style="display:none; font-size: 12px;"></div>
                     </div>
                     <!-- detect bot signups -->
                     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
                             name="b_d01fb9dd9fae15e15a3292b94_0df015b36a" tabindex="-1" value=""></div>
                     <p></p>
-                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                    <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn"
+                        style="border: 1px solid #0f0;">Subscribe</button>
                     <br></br>
                 </div>
             </form>
@@ -195,6 +150,7 @@
 </body>
 
 
+<br></br>
 <br></br>
 
 </html>

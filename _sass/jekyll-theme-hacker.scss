@@ -21,8 +21,7 @@ body {
   color: $body-foreground;
   font-size: 16px;
   line-height: 1.5;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal,
-    monospace;
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
 }
 
 /* General & 'Reset' Stuff */
@@ -70,11 +69,9 @@ header h1 {
   line-height: 1.5;
   margin: 0 0 0 -40px;
   font-weight: bold;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal,
-    monospace;
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   color: $conifer; //$header;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(181, 232, 83, 0.1),
-    0 0 10px rgba(181, 232, 83, 0.1);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(181, 232, 83, 0.1), 0 0 10px rgba(181, 232, 83, 0.1);
   letter-spacing: -1px;
   -webkit-font-smoothing: antialiased;
 
@@ -123,12 +120,10 @@ h4,
 h5,
 h6 {
   font-weight: normal;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal,
-    monospace;
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   color: $header;
   letter-spacing: -0.03em;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(181, 232, 83, 0.1),
-    0 0 10px rgba(181, 232, 83, 0.1);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(181, 232, 83, 0.1), 0 0 10px rgba(181, 232, 83, 0.1);
 }
 
 #main_content h1 {
@@ -266,6 +261,7 @@ hr {
     rgba(10, 10, 10, 0.8) 50%,
     rgba(0, 0, 0, 0.8)
   );
+  cursor: pointer;
 }
 
 .btn .icon {
@@ -378,8 +374,52 @@ a {
   cursor: pointer;
 }
 
-.hiddenUntilReady.closed.floatingchat-donate-button:hover {
+.credentials {
+  font: 14px;
+  height: 30px;
+  background-color: #000;
+  border-color: #0f0;
+  color: white;
+  font-weight: normal;
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  letter-spacing: -0.03em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(181, 232, 83, 0.1), 0 0 10px rgba(181, 232, 83, 0.1);
+}
+
+.credentials:focus {
+  outline: none !important;
+  border-color: #00ff00 !important;
+  box-shadow: 0 0 10px #98ff98;
+}
+
+.mce_inline_error {
+  color: #808080;
+  font-size: 12px;
+}
+
+#mc-embedded-subscribe.button {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #0f0;
+  color: #000;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+#mc-embedded-subscribe.button:hover {
   background-color: black;
   color: #00ff00;
   cursor: pointer;
+}
+
+#mc-embedded-subscribe {
+  clear: both;
+  width: auto;
+  display: block;
+  margin: unset;
 }
