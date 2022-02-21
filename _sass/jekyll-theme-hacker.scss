@@ -396,30 +396,3 @@ a {
   color: #808080;
   font-size: 12px;
 }
-
-#mc-embedded-subscribe.button {
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color: #0f0;
-  color: #000;
-  padding: 10px;
-  border-radius: 10px;
-  font-size: 15px;
-}
-
-#mc-embedded-subscribe.button:hover {
-  background-color: black;
-  color: #00ff00;
-  cursor: pointer;
-}
-
-#mc-embedded-subscribe {
-  clear: both;
-  width: auto;
-  display: block;
-  margin: unset;
-}
