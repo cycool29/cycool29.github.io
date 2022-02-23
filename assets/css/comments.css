@@ -90,3 +90,7 @@ main .pagination-loader-container {
 .text-sm {
   display: none;
 }
+
+.gsc-toolbar-item {
+  display: none;
+}
