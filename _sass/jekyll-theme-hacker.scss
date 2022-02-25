@@ -5,7 +5,6 @@ $body-background: $cod-grey !default;
 $body-foreground: $gallery !default;
 $header: $conifer !default;
 $blockquote-color: $silver-chalice !default;
-$blockquote-border: $dove-grey !default;
 $container-max-width: 1000px;
 
 @mixin media-max-width($max-width) {
@@ -167,7 +166,7 @@ ul li {
 blockquote {
   color: $blockquote-color;
   padding-left: 10px;
-  border-left: 1px dotted $blockquote-border;
+  border-left: 1px solid #00ff00;
 }
 
 pre {
