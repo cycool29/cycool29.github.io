@@ -4,3 +4,6 @@ description: "“God is real … unless declared integer.” "
 remote_theme: jekyll-theme-hacker
 github:
     is_project_page: false
+plugins:
+  - jekyll-feed
+

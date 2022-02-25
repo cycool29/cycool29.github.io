@@ -4,15 +4,26 @@ layout: default
 author: cycool29
 ---
 
-## Pro way of making a GitHub Profile views-counter
+## Pi-Apps - The most powerful app store for Raspberry Pi
 
-You might want to see how many times your GitHub profile has been viewed. It reflects your popularity on GitHub.
+While ago, I got my first Raspberry Pi. Like most of the Linux users (specifically, Raspberry Pi users) transferring from Windows, I am getting crazy with these questions:
 
-There are many tools for similar purposes [on GitHub](https://github.com/search?q=github+profile+counter), but here, we are using **Bitly link**.
+> How to install emoji font on my pi?
 
-[Read more](/post/000002)
+> Why Discord is not supporting ARM architecture?
+
+> The built-in screenshot tool really sucks... 
+
+> Where can I install ZOOM?????
+
+I found a bunch of tutorials online, but most of them are **outdated**, and even **broke my system**.
+
+And... I found **Pi-Apps**! 🤩
+
+[Read more](/post/000003)
 
 ### Latest posts
 
+- [Pi-Apps - The most powerful app store for Raspberry Pi](/post/000003)
 - [Pro way of making a GitHub Profile views-counter](/post/000002)
 - [Use keyboard, mouse and monitor from external PC for your Raspberry Pi](/post/000001)
