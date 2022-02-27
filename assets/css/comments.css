@@ -84,5 +84,9 @@ body {
 }
 
 main .pagination-loader-container {
-  background-image: black;
+  background-image: url("https://github.com/images/modules/pulls/progressive-disclosure-line.svg");
+}
+
+.text-sm.color-text-secondary {
+  display: none;
 }
