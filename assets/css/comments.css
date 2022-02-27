@@ -86,11 +86,3 @@ body {
 main .pagination-loader-container {
   background-image: url("https://github.com/images/modules/pulls/progressive-disclosure-line.svg");
 }
-
-.text-sm {
-  display: none;
-}
-
-.gsc-comment-box-md-toolbar {
-  display: none;
-}
