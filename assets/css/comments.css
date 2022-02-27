@@ -86,11 +86,3 @@ body {
 main .pagination-loader-container {
   background-image: black;
 }
-
-.text-sm {
-  display: none;
-}
-
-.gsc-comment-box-md-toolbar {
-  display: none;
-}
