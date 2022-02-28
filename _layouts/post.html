@@ -52,41 +52,49 @@ layout: default
 <p></p>
 <h3>Share this article:</h3>
 
-<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ page.url }}"
-  class="btn" onclick="window.open(this.href, 'pop-up', ''); return false;">
+<script>
+  function popupwindow(url, title, w, h) {
+    wLeft = window.screenLeft ? window.screenLeft : window.screenX;
+    wTop = window.screenTop ? window.screenTop : window.screenY;
+
+    var left = wLeft + (window.innerWidth / 2) - (w / 2);
+    var top = wTop + (window.innerHeight / 2) - (h / 2);
+    return window.open(url, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=' + w + ', height=' + h + ', top=' + top + ', left=' + left);
+  }
+</script>
+
+<a class="btn"
+  onclick="popupwindow('https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ page.url }}', 'Share on Facebook', '580', '690')">
   <i class="fa fa-facebook-official"></i>
 </a>
 
-<a target="_blank"
-  href="https://twitter.com/intent/tweet?text=Check out this article - {{ page.title }}&url={{ site.url }}{{ site.baseurl }}{{ page.url }}"
-  class="btn" onclick="window.open(this.href, 'pop-up', ''); return false;">
+<a class="btn"
+  onclick="popupwindow('https://twitter.com/intent/tweet?text=Check out this article - {{ page.title }}&url={{ site.url }}{{ site.baseurl }}{{ page.url }}', 'Share on Twitter', '580', '690')">
   <i class="fa fa-twitter"></i>
 </a>
 
-<a target="_blank" href="http://pinterest.com/pin/create/button/?url={{ site.url }}{{ site.baseurl }}{{ page.url }}"
-  class="btn" onclick="window.open(this.href, 'pop-up', ''); return false;">
+<a class="btn"
+  onclick="popupwindow('http://pinterest.com/pin/create/button/?url={{ site.url }}{{ site.baseurl }}{{ page.url }}', 'Share on Pinterest', '750', '800')">
   <i class="fa fa-pinterest-p"></i>
 </a>
 
-<a target="_blank" href="http://www.tumblr.com/share/link?url={{ site.url }}{{ site.baseurl }}{{ page.url }}"
-  class="btn" onclick="window.open(this.href, 'pop-up', ''); return false;">
+<a class="btn"
+  onclick="popupwindow('http://www.tumblr.com/share/link?url={{ site.url }}{{ site.baseurl }}{{ page.url }}', 'Share on Tumblr', '560', '440')">
   <i class="fa fa-tumblr"></i>
 </a>
 
-<a target="_blank"
-  href="http://www.reddit.com/submit?url={{ site.url }}{{ site.baseurl }}{{ page.url }}&title=Check out this article - {{ page.title }}"
-  class="btn" onclick="window.open(this.href, 'pop-up', ''); return false;">
+<a class="btn"
+  onclick="popupwindow('http://www.reddit.com/submit?url={{ site.url }}{{ site.baseurl }}{{ page.url }}&title=Check out this article - {{ page.title }}', 'Share on Reddit', '580', '690')">
   <i class="fa fa-reddit-alien"></i>
 </a>
 
-<a target="_blank"
-  href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ site.baseurl }}{{ page.url }}&title={{ page.title }}&summary={{ page.description }}&source={{ site.title }}"
-  class="btn" onclick="window.open(this.href, 'pop-up', ''); return false;">
+<a class="btn"
+  onclick="popupwindow('https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ site.baseurl }}{{ page.url }}&title={{ page.title }}&summary={{ page.description }}&source={{ site.title }}', 'Share on Linkedin', '580', '690')">
   <i class="fa fa-linkedin"></i>
 </a>
 
-<a href="mailto:?subject={{ page.title }}&amp;body=Check out this article - {{ site.url }}{{ site.baseurl }}{{ page.url }}"
-  class="btn">
+<a class="btn"
+  onclick="popupwindow('mailto:?subject={{ page.title }}&amp;body=Check out this article - {{ site.url }}{{ site.baseurl }}{{ page.url }}', 'Share with email', '580', '690')">
   <i class="fa fa-envelope"></i>
 </a>
 
