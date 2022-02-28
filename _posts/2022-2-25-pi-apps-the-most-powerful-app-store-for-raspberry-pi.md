@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Pi-Apps - The most powerful app store for Raspberry Pi
+description: <p>While ago, I got my first Raspberry Pi. Like most of the Linux users (specifically, Raspberry Pi users) transferring from Windows, I am getting crazy with these questions:</p> <blockquote> <p>How to install emoji font on my pi?</p> </blockquote> <blockquote> <p>Why Discord is not supporting ARM architecture?</p> </blockquote> <blockquote> <p>The built-in screenshot tool really sucks…</p> </blockquote> <blockquote> <p>Where can I install ZOOM?????</p> </blockquote> <p>I found a bunch of tutorials online, but most of them are <strong>outdated</strong>, and even <strong>broke my system</strong>.</p> <p>And… I found <strong>Pi-Apps</strong>! 🤩</p>
 author: cycool29
 permalink: /post/000003.html
 tags: raspberrypi beginners appstore raspbian
