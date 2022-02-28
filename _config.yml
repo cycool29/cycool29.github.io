@@ -5,5 +5,7 @@ remote_theme: jekyll-theme-hacker
 author: cycool29
 github:
     is_project_page: false
-plugins:
-  - jekyll-feed
+url: https://cycool29.github.io
+feed_items: 10
+feed_update_period: daily
+feed_update_frequency: 1
