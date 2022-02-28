@@ -9,7 +9,3 @@ url: https://cycool29.github.io
 feed_items: 10
 feed_update_period: daily
 feed_update_frequency: 1
-plugins:
-  - jekyll-feed
-
-rss: rss
