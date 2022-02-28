@@ -26,4 +26,4 @@ And... I found **Pi-Apps**! 🤩
 
 - [Pi-Apps - The most powerful app store for Raspberry Pi](/post/000003)
 - [Pro way of making a GitHub Profile views-counter](/post/000002)
-- [Use keyboard, mouse and monitor from external PC for your Raspberry Pi](/post/000001)
+- [Setting up headless Raspberry Pi](/post/000001)
