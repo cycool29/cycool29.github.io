@@ -7,4 +7,4 @@ github:
     is_project_page: false
 plugins:
   - jekyll-feed
-
+  - jekyll-twitter-plugin
