@@ -4,6 +4,7 @@ layout: default
 <small>{{ page.date | date: "%-d %B %Y" }}</small>
 <h1>{{ page.title }}</h1>
 
+<small style="padding-left: 70%; float: right; color: #808080;">{{ page.read-time }} mins read</small>
 <p class="view" style="color: #808080 "><em>by {{ page.author | default: site.author }}</em></p>
 
 {{content}}
@@ -23,7 +24,7 @@ layout: default
   <script src="https://giscus.app/client.js" data-repo="cycool29/cycool29.github.io" data-repo-id="R_kgDOG2n1VA"
     data-category="General" data-category-id="DIC_kwDOG2n1VM4CBMIA" data-mapping="specific" data-term="{{page.title}}"
     data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom"
-    data-theme="https://cycool29.github.io/assets/css/comments.css" data-lang="en" data- crossorigin="anonymous" async>
+    data-theme="https://cycool29.github.io/assets/css/comments.css" data-lang="en" data-crossorigin="anonymous" async>
     </script>
 </div>
 <p></p>

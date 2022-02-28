@@ -313,8 +313,12 @@ hr {
 }
 
 .kofi {
-  content: url("https://uploads-ssl.webflow.com/5c14e387dab576fe667689cf/5c91bddac6c3aa6b3718fd86_kofisvglofo.svg");
-  height: 18px;
+  content: url('https://storage.ko-fi.com/cdn/cup-border.png');
+  width: 18px;
+}
+
+.buymeacoffee {
+  content: url('https://www.buymeacoffee.com/assets/img/bmc-meta-new/new/favicon.png');
   width: 18px;
 }
 
@@ -396,7 +400,7 @@ a {
   font-size: 12px;
 }
 
-.footer {
+#footer {
   padding-left: 20%;
   padding-top: 1%;
   font-size: smaller;
