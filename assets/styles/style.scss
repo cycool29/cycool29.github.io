@@ -1,7 +1,12 @@
 ---
 sitemap:
-    exclude: 'yes'
+    exclude: "yes"
 ---
+
+* {
+    scroll-behavior: smooth;
+    transition: 0.5s;
+}
 
 section {
     display: block;
