@@ -10,3 +10,5 @@ feed_items: 10
 feed_update_period: daily
 feed_update_frequency: 1
 timezone: UTC 
+plugins:
+  - jekyll-sitemap
