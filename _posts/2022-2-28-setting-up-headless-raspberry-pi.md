@@ -3,6 +3,7 @@ layout: post
 title: Setting up headless Raspberry Pi
 description: <p>However, you will need a monitor, keyboard, mouse… etc. This will be associated with a huge amount of money (that’s not <em>low-cost</em> anymore…). 💰</p> <p>But, You may use a headless setup for your Pi to cut down all the cost. 😎</p>
 author: cycool29
+date: 2022-2-28 15:00 +08:00
 permalink: /post/000001.html
 tags: raspberrypi tutorial beginners linux
 read-time: 5

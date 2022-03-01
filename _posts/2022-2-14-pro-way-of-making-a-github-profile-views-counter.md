@@ -3,6 +3,7 @@ layout: post
 title: Pro way of making a GitHub Profile views-counter
 description: <p>You might want to see how many times your GitHub profile has been viewed. It reflects your popularity on GitHub.</p> <p>There are many tools for similar purposes <a href=https://github.com/search?q=github+profile+counter>on GitHub</a>, but here, we are using <strong>Bitly link</strong>.</p>
 author: cycool29
+date: 2022-2-14 16:30 +08:00
 permalink: /post/000002.html
 tags: github profile readme tutorial
 read-time: 5
