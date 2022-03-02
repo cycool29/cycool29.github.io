@@ -3,6 +3,19 @@ sitemap:
     exclude: "yes"
 ---
 
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-in-fast {
+    animation: fadein 2s;
+}
+
 * {
     scroll-behavior: smooth;
     transition: 0.5s;
