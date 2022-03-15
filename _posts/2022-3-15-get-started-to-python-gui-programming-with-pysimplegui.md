@@ -8,6 +8,15 @@ tags: tutorial beginners python gui
 read-time: 5
 ---
 
+---
+
+## Table of Contents
+
+- [What is GUI?](#what-is-gui)
+
+
+---
+
 There are many Python GUI toolkit which let you create nice GUI applications. But I would like to use PySimpleGUI as a beginning toolkit of Python GUI programming.
 
 The reason is in its name - **simple**. 
@@ -19,3 +28,12 @@ GUI is a acronym of **Graphical User Interface**.
 A GUI application simplifies how users use their computer. Unlike CLI programmes, users won't need a good memory to remember a bunch of commands. With a few clicks, users can copy files to another directory, chat with others easily, and see nice web content. For example, menus, icons, tabs, pointers and graphs are shown to a user in GUI so that users can conveniently select one of them. 
 
 GUI uses visual elements to represent those now hidden lines of command. Users can simply select a button or an icon to call specific function. The easy use of GUIs has made it possible for the public in general, regardless of experience or knowledge, to access all kinds of systems for everyday-use.
+
+<h2><span id="why-pysimplegui">Why we should use PySimpleGUI?</span></h2>
+
+Now the question comes - there are soooo many Python GUI toolkits like tkinters, pyqt, wxpython... Why we should use PySimpleGUI?
+
+The only reason is as its name suggests - it is *very* simple to use, and beginner-friendly. 
+
+It is not as **powerful** as the other toolkits. Hence, PySimpleGUI should be only your **first step** into GUI programming, to learn how a GUI app looks like.
+Anyway, to create a simple Video Downloader, that would be enough. 😎 
