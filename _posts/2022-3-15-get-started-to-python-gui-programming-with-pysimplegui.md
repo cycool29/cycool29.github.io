@@ -33,9 +33,9 @@ A GUI application simplifies how users use their computer. Unlike CLI programmes
 GUI uses visual elements to represent those now hidden lines of command. Users can simply select a button or an icon to call specific function. The easy use of GUIs has made it possible for the public in general, regardless of experience or knowledge, to access all kinds of systems for everyday-use.
 
 
-<h2><span id="why-pysimplegui">Why we should use PySimpleGUI?</span></h2>
+<h2><span id="why-pysimplegui">Why should we use PySimpleGUI?</span></h2>
 
-Now the question comes - there are soooo many Python GUI toolkits like tkinters, pyqt, wxpython... Why we should use PySimpleGUI?
+Now the question comes - there are soooo many Python GUI toolkits like tkinters, pyqt, wxpython... Why should we use PySimpleGUI?
 
 The only reason is as its name suggests - it is *very* simple to use, and beginner-friendly. 
 
