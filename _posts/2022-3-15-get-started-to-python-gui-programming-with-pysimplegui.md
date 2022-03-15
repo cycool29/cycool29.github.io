@@ -49,4 +49,6 @@ The only reason is as its name suggests - it is *very* simple to use, and beginn
 
 
 It is not as **powerful** as the other toolkits. Hence, PySimpleGUI should be only your **first step** into GUI programming, to learn how a GUI app looks like.
-Anyway, to create a simple YouTube Video Downloader, that would be enough. 😎 
+For advance GUI program, you should try to use other GUI toolkits instead.
+
+Anyway, to create a simple YouTube Video Downloader, PySimpleGUI would be enough. 😎 
