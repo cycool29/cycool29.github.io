@@ -39,6 +39,7 @@ Now the question comes - there are soooo many Python GUI toolkits like tkinters,
 
 The only reason is as its name suggests - it is *very* simple to use, and beginner-friendly. 
 
+The description of PySimpleGUI explained it.
 
 > Transforms the tkinter, Qt, WxPython, and Remi (browser-based) GUI frameworks into a simpler interface. The window definition is simplified by using Python core data types understood by beginners (lists and dictionaries). Further simplification happens by changing event handling from a callback-based model to a message passing one.
 >
@@ -47,8 +48,5 @@ The only reason is as its name suggests - it is *very* simple to use, and beginn
 > Some programs are not well-suited for PySimpleGUI however. By definition, PySimpleGUI implements a subset of the underlying GUI frameworks' capabilities. It's difficult to define exactly which programs are well suited for PySimpleGUI and which are not. It depends on the details of your program. Duplicating Excel in every detail is an example of something not well suited for PySimpleGUI.
 
 
+<h2><span id="get-started">Get started!</span></h2>
 
-It is not as **powerful** as the other toolkits. Hence, PySimpleGUI should be only your **first step** into GUI programming, to learn how a GUI app looks like.
-For advance GUI program, you should try to use other GUI toolkits instead.
-
-Anyway, to create a simple YouTube Video Downloader, PySimpleGUI would be enough. 😎 
