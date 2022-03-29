@@ -8,7 +8,7 @@ author: cycool29
 
 While ago, I got my first Raspberry Pi. Like most of the Linux users (specifically, Raspberry Pi users) transferring from Windows, I am getting crazy with these questions:
 
-> How to install emoji font on my pi??
+> How to install emoji font on my pi?
 
 > Why Discord is not supporting ARM architecture?
 
