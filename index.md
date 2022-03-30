@@ -4,7 +4,7 @@ layout: default
 author: cycool29
 ---
 
-## Understanding __init__ Method in Python
+## Understanding `__init__` Method in Python
 
 Whenever we have Object-Oriented Programming in Python, we mostly come across `__init__` method which we usually don’t fully understand. 
 
@@ -15,7 +15,7 @@ Today, programmers are bound to come across Object-Oriented Programming (OOP) du
 
 ### Latest posts
 
-- [Understanding __init__ Method in Python](/post/000004)
+- [Understanding `__init__` Method in Python](/post/000004)
 - [Pi-Apps - The most powerful app store for Raspberry Pi](/post/000003)
 - [Pro way of making a GitHub Profile views-counter](/post/000002)
 - [Setting up headless Raspberry Pi](/post/000001)
