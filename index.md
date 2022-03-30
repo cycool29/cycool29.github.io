@@ -4,26 +4,18 @@ layout: default
 author: cycool29
 ---
 
-## Pi-Apps - The most powerful app store for Raspberry Pi
+## Understanding __init__ Method in Python
 
-While ago, I got my first Raspberry Pi. Like most of the Linux users (specifically, Raspberry Pi users) transferring from Windows, I am getting crazy with these questions:
+Whenever we have Object-Oriented Programming in Python, we mostly come across `__init__` method which we usually don’t fully understand. 
 
-> How to install emoji font on my pi?
+Today, programmers are bound to come across Object-Oriented Programming (OOP) during their career. As a modern and popular programming language, Python provides all the means to implement the object-oriented philosophy. The `__init__` method is at the core of Object-Oriented Programming and is one of the essential parts to create objects.
 
-> Why Discord is not supporting ARM architecture?
 
-> The built-in screenshot tool really sucks... 
-
-> Where can I install ZOOM?????
-
-I found a bunch of tutorials online, but most of them are **outdated**, and even **broke my system**.
-
-And... I found **Pi-Apps**! 🤩
-
-[Read more](/post/000003)
+[Read more](/post/000004)
 
 ### Latest posts
 
+- [Understanding __init__ Method in Python](/post/000004)
 - [Pi-Apps - The most powerful app store for Raspberry Pi](/post/000003)
 - [Pro way of making a GitHub Profile views-counter](/post/000002)
 - [Setting up headless Raspberry Pi](/post/000001)

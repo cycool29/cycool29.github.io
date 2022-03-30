@@ -5,7 +5,7 @@ description:
 date: 2022-3-30 08:00 +08:00
 permalink: /post/000004.html
 tags: python programming init beginners
-read-time: 5
+read-time: 2
 ---
 
 ---
@@ -18,7 +18,7 @@ read-time: 5
 
 ---
 
-Whenever we have object oriented programming in Python, we mostly come across `__init__` method which we usually don’t fully understand. 
+Whenever we have Object-Oriented Programming in Python, we mostly come across `__init__` method which we usually don’t fully understand. 
 
 Today, programmers are bound to come across Object-Oriented Programming (OOP) during their career. As a modern and popular programming language, Python provides all the means to implement the object-oriented philosophy. The `__init__` method is at the core of Object-Oriented Programming and is one of the essential parts to create objects.
 
