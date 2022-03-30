@@ -1,4 +1,4 @@
-# https://cycool29.githuh.io
+# https://cycool29.github.io
 
 This is a blog to record everything I've learnt in the daily life. 
 
