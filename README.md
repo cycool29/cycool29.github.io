@@ -1,6 +1,6 @@
 # [cycool29.github.io](https://cycool29.github.io)
 
-This is a blog to record everything I've learnt in the daily life. 
+This is a blog to record everything I've learnt in the daily life, and share to who else needs it. 
 
 ## 📝 Latest Blog Posts 
 - [Understanding `__init__` Method in Python](https://cycool29.github.io/post/000004)
