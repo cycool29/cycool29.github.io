@@ -8,7 +8,7 @@ tags: python programming init beginners
 read-time: 2
 ---
 
----
+___
 
 ## Table of Contents
 
@@ -16,7 +16,7 @@ read-time: 2
 - [What is `__init__` method?](#what-is-init)
 - [Example usecase of `__init__` method](#example-usecase)
 
----
+___
 
 Whenever we have Object-Oriented Programming in Python, we mostly come across `__init__` method which we usually don’t fully understand. 
 

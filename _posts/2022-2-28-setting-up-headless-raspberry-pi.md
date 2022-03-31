@@ -7,6 +7,8 @@ date: 2022-2-28 15:00 +08:00
 permalink: /post/000001.html
 tags: raspberrypi tutorial beginners linux
 read-time: 5
+medium-link: https://medium.com/@cycool29/setting-up-headless-raspberry-pi-72979b81e07b
+dev-link: https://dev.to/cycool29/setting-up-headless-raspberry-pi-1m9b
 ---
 
 ___

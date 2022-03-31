@@ -3,6 +3,16 @@ layout: default
 ---
 <small>{{ page.date | date: "%-d %B %Y" }}</small>
 <h1>{{ page.title }}</h1>
+{% if page.medium-link %}
+<p class="btn" style="color: #0f0; font-size: 65%;"><i class="fa fa-medium fa-lg" aria-hidden="true"
+  style="color: #0f0;"></i> <a style="text-decoration: none; color: #0f0;"
+  href="{{ page.medium-link }}" target="_blank">Read on Medium </a></p>
+{% endif %}
+{% if page.dev-link %}
+<p class="btn" style="color: #0f0; font-size: 65%;"><i class="fa fa-dev-to fa-lg" aria-hidden="true"
+  style="color: #0f0;"></i> <a style="text-decoration: none; color: #0f0;"
+  href="{{ page.dev-link }}", target="_blank">Read on Dev.to </a></p>
+{% endif %}
 
 <small style="padding-left: 70%; float: right; color: #808080;">{{ page.read-time }} mins read</small>
 <p class="view" style="color: #808080 "><em>by {{ page.author | default: site.author }}</em></p>

@@ -7,6 +7,8 @@ date: 2022-02-25 12:45:00 +08:00
 permalink: /post/000003.html
 tags: raspberrypi beginners appstore raspbian
 read-time: 5
+medium-link: https://medium.com/@cycool29/pi-apps-the-most-powerful-app-store-for-raspberry-pi-e3e651623247
+dev-link: https://dev.to/cycool29/pi-apps-the-most-powerful-app-store-for-raspberry-pi-105l
 ---
 
 ______

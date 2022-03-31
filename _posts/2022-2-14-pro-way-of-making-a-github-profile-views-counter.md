@@ -7,6 +7,8 @@ date: 2022-2-14 16:30 +08:00
 permalink: /post/000002.html
 tags: github profile readme tutorial
 read-time: 5
+medium-link: https://medium.com/me/stats/post/36b25b1abc3e
+dev-link: https://dev.to/cycool29/pro-way-of-making-a-github-profile-views-counter-3blg
 ---
 
 ---
