@@ -26,4 +26,5 @@ sitemap:
   <url>
     <loc>{{ site.url }}/subscribe</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+  </url>
 </urlset>
