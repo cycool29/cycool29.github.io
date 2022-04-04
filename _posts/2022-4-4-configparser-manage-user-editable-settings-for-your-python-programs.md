@@ -7,7 +7,7 @@ permalink: /post/000005.html
 tags: 
 read-time: 2
 medium-link:
-dev-link: 
+dev-link: https://dev.to/cycool29/configparser-manage-user-editable-settings-for-your-python-programs-3a88
 ---
 
 ___
