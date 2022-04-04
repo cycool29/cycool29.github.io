@@ -4,9 +4,9 @@ title: ConfigParser - manage user-editable settings for your Python programs
 description: User-configurable settings are important for big applications. They make your application more user-friendly and improve the efficiency of your application. But you may be curious, where and how to store those configurations?
 date: 2022-4-4 17:40 +08:00
 permalink: /post/000005.html
-tags: 
-read-time: 2
-medium-link:
+tags: python configs tutorial module
+read-time: 4
+medium-link: https://medium.com/@cycool29/configparser-manage-user-editable-settings-for-your-python-programs-161cbcd285d4
 dev-link: https://dev.to/cycool29/configparser-manage-user-editable-settings-for-your-python-programs-3a88
 ---
 
