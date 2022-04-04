@@ -6,6 +6,8 @@ date: 2022-3-30 08:00 +08:00
 permalink: /post/000004.html
 tags: python programming init beginners
 read-time: 2
+medium-link: https://medium.com/@cycool29/understanding-init-method-in-python-df07f18eddaf
+dev-link: https://dev.to/cycool29/understanding-init-method-in-python-3fko
 ---
 
 ___

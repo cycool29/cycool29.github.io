@@ -4,18 +4,22 @@ layout: default
 author: cycool29
 ---
 
-## Understanding `__init__` Method in Python
+<h2><a href="/post/000005" style="text-decoration: none; color: #00ff00">ConfigParser - manage user-editable settings for your Python programs</a></h2>
 
-Whenever we have Object-Oriented Programming in Python, we mostly come across `__init__` method which we usually don’t fully understand. 
+User-configurable settings are important for big applications. They make your application more user-friendly and improve the efficiency of your application.
 
-Today, programmers are bound to come across Object-Oriented Programming (OOP) during their career. As a modern and popular programming language, Python provides all the means to implement the object-oriented philosophy. The `__init__` method is at the core of Object-Oriented Programming and is one of the essential parts to create objects.
+But you may be curious, **where and how to store those configurations?**
+
+Here I am gonna introduce you **[ConfigParser](https://docs.python.org/3/library/configparser)**, one of the standard libraries in Python 3, which is used to save settings for your Python applications.
 
 
-[Read more](/post/000004)
+ <p class="btn" style="color: #0f0; font-size: 90%; border-color: #00ff00"><a style="text-decoration: none; color: #0f0;"
+                        href="/post/000005">Continue Reading </a></p>
 
-### Latest posts
+<br/>
 
-- [Understanding `__init__` Method in Python](/post/000004)
-- [Pi-Apps - The most powerful app store for Raspberry Pi](/post/000003)
-- [Pro way of making a GitHub Profile views-counter](/post/000002)
-- [Setting up headless Raspberry Pi](/post/000001)
+### **Latest posts**
+
+{% for post in site.posts limit:5 %}
+- [{{ post.title }}]({{ post.url }})
+{% endfor %}
