@@ -1,14 +1,7 @@
 title: cycool29's blog
-comments: Comments
-description: "“There’s no place like 127.0.0.1.” "
-remote_theme: jekyll-theme-hacker
+description: "“UNIX is user friendly. It’s just very particular about who its friends are.” "
 author: cycool29
-github:
-    is_project_page: false
 url: https://cycool29.github.io
-feed_items: 10
-feed_update_period: daily
-feed_update_frequency: 1
 timezone: UTC 
 plugins:
   - jekyll-sitemap
