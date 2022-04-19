@@ -14,7 +14,7 @@ Here I am gonna introduce you **[ConfigParser](https://docs.python.org/3/library
 
 
  <p class="btn" style="color: #0f0; font-size: 90%; border-color: #00ff00"><a style="text-decoration: none; color: #0f0;"
-                        href="/post/000005">Continue Reading </a></p>
+                        href="/post/000005.html">Continue Reading </a></p>
 
 <br/>
 
