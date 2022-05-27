@@ -15,6 +15,6 @@ You support is the greatest motivation for me to create nice contents!
 You can simply share my posts anywhere, leave a comment there, or [tell me how to do better](https://github.com/cycool29/cycool29.github.io/issues/new)!
 If you are generous, you can also give financial support to me:
 
-[![ko-fi](https://github.com/cycool29/cycool29/raw/main/githubbutton_sm.svg)](https://ko-fi.com/cycool29) 
+[![ko-fi](https://github.com/cycool29/cycool29/raw/main/ko-fi.png)](https://ko-fi.com/cycool29) 
 
 #### Thanks!
