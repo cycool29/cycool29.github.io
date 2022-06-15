@@ -24,4 +24,4 @@ Here I am gonna introduce you **[ConfigParser](https://docs.python.org/3/library
 - [{{ post.title }}]({{ post.url }})
 {% endfor %}
 
-[Jalan ke Puncak](https://docs.google.com/presentation/d/1xLm0lYoN27uVJFRdhF3zxxDbbBk67K_wL1sJlffconM/edit?usp=sharing)
+
