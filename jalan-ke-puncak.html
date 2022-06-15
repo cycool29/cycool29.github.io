@@ -11,6 +11,34 @@
 </head>
 
 <body>
+    <header>
+        <div class="container">
+            <a id="a-title" href="{{ '/' | relative_url }}">
+                <h1 style="float: left;">{{ site.title | default: site.github.repository_name }}</h1>
+            </a>
+            <br />
+            <br />
+            <h4 style="color: grey; float: inline-end;"><em>{{ site.description | default: site.github.project_tagline
+                    }}</em></h4>
+            <div style="margin-bottom: 15px;">
+                <p class="btn" style="color: #0f0; font-size: 80%;"><i class="fa fa-rss fa-lg" aria-hidden="true"
+                        style="color: #0f0;"></i> <a style="text-decoration: none; color: #0f0;"
+                        href="/feed.xml">Subscribe via RSS </a></p>
+                <p class="btn" style="color: #0f0; font-size: 80%;"><i class="fa fa-envelope fa-lg" aria-hidden="true"
+                        style="color: #0f0;"></i> <a style="text-decoration: none; color: #0f0;"
+                        href="/subscribe">Subscribe via Email </a></p>
+                <p class="btn" style="color: #0f0; font-size: 80%;"> <a style="text-decoration: none; color: #0f0;"
+                        href="https://twitter.com/cycool29" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"
+                        style="color: #0f0;"></i> </a></p>
+                <p class="btn" style="color: #0f0; font-size: 80%;"> <a style="text-decoration: none; color: #0f0;"
+                        href="https://github.com/cycool29" target="_blank"><i class="fa fa-github fa-lg" aria-hidden="true"
+                        style="color: #0f0;"></i> </a></p>
+                <p class="btn" style="color: #0f0; font-size: 80%;"> <a style="text-decoration: none; color: #0f0;"
+                        href="https://www.reddit.com/user/cycool29" target="_blank"><i class="fa fa-reddit-alien fa-lg" aria-hidden="true"
+                        style="color: #0f0;"></i> </a></p>
+            </div>
+        </div>
+    </header>
     <div class="container">
         <section id="main_content">
             <h1>Wait 5 seconds, and I am gonna redirect... </h1>
