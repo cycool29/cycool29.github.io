@@ -2,7 +2,7 @@ name: Generate sitemap
 
 on:
   push:
-    branches: [ main ]
+    branches: [ gh-pages ]
   workflow_dispatch:
 
 jobs:
