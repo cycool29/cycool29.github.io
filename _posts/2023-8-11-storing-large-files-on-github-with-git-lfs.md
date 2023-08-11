@@ -7,8 +7,8 @@ date: 2023-8-11 21:50 +08:00
 permalink: /post/000006.html
 tags: git-lfs github large-file git
 read-time: 5
-medium-link: 
-dev-link: 
+medium-link: https://medium.com/@cycool29/storing-large-files-on-github-with-git-lfs-b1f8a43e1d0
+dev-link: https://dev.to/cycool29/storing-large-files-on-github-with-git-lfs-2d31
 ---
 
 ---
