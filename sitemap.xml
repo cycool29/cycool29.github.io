@@ -1,30 +1,23 @@
----
-layout: null
-sitemap:
-  exclude: 'yes'
----
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {% for post in site.posts %}
-    {% unless post.published == false %}
-    <url>
-      <loc>{{ site.url }}{{ post.url | remove: ".html" }}</loc>
-      {% if post.sitemap.lastmod %}
-        <lastmod>{{ post.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
-      {% elsif post.date %}
-        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-      {% else %}
-        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-      {% endif %}
-    </url>
-    {% endunless %}
-  {% endfor %}
-  <url>
-    <loc>{{ site.url }}</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-  </url>
-  <url>
-    <loc>{{ site.url }}/subscribe</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-  </url>
+<url>
+<loc>https://cycool29.github.io/geo.html</loc>
+<lastmod>2022-07-17T19:32:03+08:00</lastmod>
+</url>
+<url>
+<loc>https://cycool29.github.io/jalan-ke-puncak.html</loc>
+<lastmod>2022-07-16T23:33:45+08:00</lastmod>
+</url>
+<url>
+<loc>https://cycool29.github.io/subscribe.html</loc>
+<lastmod>2022-03-02T12:54:58+08:00</lastmod>
+</url>
+<url>
+<loc>https://cycool29.github.io/_layouts/default.html</loc>
+<lastmod>2022-06-29T16:38:12+08:00</lastmod>
+</url>
+<url>
+<loc>https://cycool29.github.io/_layouts/post.html</loc>
+<lastmod>2022-04-04T18:05:53+08:00</lastmod>
+</url>
 </urlset>
