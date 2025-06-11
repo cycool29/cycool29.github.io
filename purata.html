@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Purata Calculator</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { padding: 2rem; }
+    .table input { width: 100px; }
+  </style>
+</head>
+<body>
+  <h1 class="mb-4">💯 Purata Calculator</h1>
+
+  <table class="table table-bordered align-middle text-center">
+    <thead class="table-dark">
+      <tr>
+        <th>Subject</th>
+        <th>Weightage</th>
+        <th>Marks (1–100)</th>
+      </tr>
+    </thead>
+    <tbody id="tbody"></tbody>
+  </table>
+
+  <div class="mb-3">
+    <label for="target" class="form-label">🎯 Target Purata</label>
+    <input type="number" class="form-control" id="target" min="1" max="100">
+  </div>
+
+  <div class="d-flex align-items-center gap-3">
+    <button class="btn btn-primary" id="calculate">📊 Calculate</button>
+    <span>Average: <strong id="purata">0.00</strong></span>
+    <span>Needed Average for Blank: 
+      <span id="target-badge" class="btn btn-sm" style="pointer-events:none;">
+        <strong id="targetpurata">0.00</strong>
+      </span>
+    </span>
+  </div>
+
+  <script>
+    const subjectList = [
+      ["马来文 / B. MALAYSIA / MALAY LANGUAGE", 7],
+      ["英文 / B. INGGERIS / ENGLISH", 5],
+      ["华文 / BAHASA CINA / CHINESE", 7],
+      ["数学 / MATEMATIK / MATHEMATICS", 5],
+      ["高等数学 / MAT. TAMBAHAN / ADD. MATH", 4],
+      ["物理 / FIZIK / PHYSICS", 4],
+      ["化学 / KIMIA / CHEMISTRY", 4],
+      ["历史 / SEJARAH / HISTORY", 3],
+      ["道德教育 / PEND. MORAL / MORAL ED.", 3],
+      ["体育 / P.J.K. / HEALTH & P.E.", 2],
+      ["课外活动 / KOKURIKULUM / COCURRICULUM", 5],
+      ["电脑科学 / SAINS KOMPUTER / COMPUTER SCIENCE", 4]
+    ];
+
+    let tableData = {};
+    subjectList.forEach(([subject, weight]) => {
+      tableData[subject] = { weightage: weight, marks: -1 };
+    });
+
+    function renderTable() {
+      const tbody = document.getElementById('tbody');
+      tbody.innerHTML = '';
+      for (const [subject, value] of Object.entries(tableData)) {
+        const marks = value['marks'] === -1 ? '' : `value="${value['marks']}"`;
+        const input = `<input type="number" class="marks form-control" id="${subject}" ${marks} min="1" max="100">`;
+        const row = `<tr><td>${subject}</td><td class="weightage">${value['weightage']}</td><td>${input}</td></tr>`;
+        tbody.innerHTML += row;
+      }
+      updateMarksEventListener();
+    }
+
+    function getAllTableDataAndCalculate() {
+      let totalMarksWithPemberat = 0;
+      let totalPemberat = 0;
+      let ignoredPemberat = 0;
+
+      let table = document.getElementById('tbody');
+      let rows = table.getElementsByTagName('tr');
+
+      for (let i = 0; i < rows.length; i++) {
+        let row = rows[i];
+        let marks = row.getElementsByTagName('input')[0].value || -1;  
+        let subject = row.getElementsByTagName('td')[0].textContent || "";      
+        marks = parseFloat(marks);
+
+        if (tableData[subject] !== undefined) {
+          tableData[subject]['marks'] = marks;
+        }
+
+        let weightage = parseInt(row.getElementsByClassName('weightage')[0].textContent);
+        if (marks !== -1 && !isNaN(marks)) {
+          totalMarksWithPemberat += marks * weightage;
+          totalPemberat += weightage;
+        } else {
+          ignoredPemberat += weightage;
+        }
+      }
+
+      let purata = (totalPemberat !== 0) ? (totalMarksWithPemberat / totalPemberat) : 0.00;
+      document.getElementById('purata').innerText = purata.toFixed(2);
+      return { totalPemberat, ignoredPemberat, purata };
+    }
+
+    function calculateTarget(purata, target, totalPemberat, ignoredPemberat) {
+      let total = totalPemberat + ignoredPemberat;
+      let targetSum = total * target;
+      let targetPurata = (targetSum - purata * totalPemberat) / ignoredPemberat;
+      const displayBadge = document.getElementById('target-badge');
+      displayBadge.classList.remove('btn-success', 'btn-danger', 'btn-warning');
+
+      if (targetPurata > 100) {
+        displayBadge.classList.add('btn-danger');
+      } else if (targetPurata > 90) {
+        displayBadge.classList.add('btn-warning');
+      } else {
+        displayBadge.classList.add('btn-success');
+      }
+
+      document.getElementById('targetpurata').innerText = Math.max(0, targetPurata.toFixed(2));
+    }
+
+    function calcTargetEvent() {
+      let data = getAllTableDataAndCalculate();
+      let target = parseFloat(document.getElementById('target').value) || 0;
+      calculateTarget(data["purata"], target, data["totalPemberat"], data["ignoredPemberat"]);
+    }
+
+    function updateMarksEventListener() {
+      let elements = document.getElementsByClassName('marks');
+      for (let i = 0; i < elements.length; i++) {
+        elements[i].addEventListener('keyup', calcTargetEvent);
+      }
+    }
+
+    document.getElementById('target').addEventListener('keyup', calcTargetEvent);
+    document.getElementById('calculate').addEventListener('click', calcTargetEvent);
+
+    renderTable();
+  </script>
+</body>
+</html>
